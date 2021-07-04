@@ -1,0 +1,44 @@
+﻿{
+   "CodeGenerationMode": 1,
+   "ContextClassName": "MasterContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "..\\INFRASTRUCTURE.Apae_Administrativo_Excepcionais\\Context",
+   "OutputPath": "Entities",
+   "ProjectRootNamespace": "DOMAIN.Apae_Administrativo_Excepcionais",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[TB_FUNCIONARIO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TB_PESSOA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TB_TIPO_FUNCIONARIO]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "(localdb)\\MSSQLLocalDB.master",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNoConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}
