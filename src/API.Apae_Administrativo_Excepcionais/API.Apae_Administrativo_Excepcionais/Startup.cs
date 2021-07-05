@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace API.Apae_Administrativo_Excepcionais
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public class Startup
     {
         public IConfiguration Configuration { get; }
@@ -26,9 +27,10 @@ namespace API.Apae_Administrativo_Excepcionais
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers()
+                .AddCustomJsonOptions();
 
-            services.AddDbContext<Context>(options =>
+            services.AddDbContextPool<Context>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString("ConnectionStringDB")));
 
 
@@ -55,7 +57,6 @@ namespace API.Apae_Administrativo_Excepcionais
                 app.UseExceptionHandler("/error");
             }
 
-            app.UseStaticFiles();
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -66,8 +67,6 @@ namespace API.Apae_Administrativo_Excepcionais
                     c.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
                 }
                 c.RoutePrefix = string.Empty;
-                c.InjectStylesheet("/swagger-ui/custom.css");
-                c.IndexStream = () => GetType().GetTypeInfo().Assembly.GetManifestResourceStream("VALORE_API.API.wwwroot.swagger_ui.index.html");
             });
 
 
@@ -85,4 +84,5 @@ namespace API.Apae_Administrativo_Excepcionais
             });
         }
     }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

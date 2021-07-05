@@ -29,8 +29,7 @@ namespace IOC.Apae_Administrativo_Excepcionais.Swagger
                 c.OperationFilter<SwaggerDefaultValues>();
                 c.OperationFilter<BearerAuthenticationFilter>();
                 c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"Api.xml"), true);
-
-                c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"Application.xml"));
+                c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"Application.xml"), true);
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {

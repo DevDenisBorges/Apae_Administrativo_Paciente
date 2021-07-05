@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API.Apae_Administrativo_Excepcionais</name>
+    </assembly>
+    <members>
+        <member name="M:API.Apae_Administrativo_Excepcionais.Controllers.FuncionarioController.Index">
+            <summary>
+            Tenta criar Favorito Informações informadas
+            </summary>
+            <response code="200">Ok</response>
+        </member>
+    </members>
+</doc>

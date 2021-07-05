@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace API.Apae_Administrativo_Excepcionais
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public class Program
     {
         public static void Main(string[] args)
@@ -23,4 +24,5 @@ namespace API.Apae_Administrativo_Excepcionais
                     webBuilder.UseStartup<Startup>();
                 });
     }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }
