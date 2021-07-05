@@ -1,0 +1,3 @@
+{
+  "ConnectionStringDB": "Host=(localdb)\\MSSQLLocalDB;Port=5432;Pooling=true;Database=master;User Id=sa;Password=nvhd185srv;"
+}

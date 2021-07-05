@@ -1,7 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\IoC_CrossCutting.Apae_Administrativo_Excepcionais\IOC.Apae_Administrativo_Excepcionais\IOC.Apae_Administrativo_Excepcionais.csproj" />
+  </ItemGroup>
 
 </Project>
